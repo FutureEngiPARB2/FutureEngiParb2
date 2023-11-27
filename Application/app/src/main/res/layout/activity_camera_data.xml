@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10sp"
+    android:layout_marginBottom="10sp"
+    android:id="@+id/cons"
+    android:layout_marginStart="10sp"
+    android:layout_marginEnd="10sp"
+    tools:context=".DataCollection.CameraActivity_Data">
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerView"
+        android:name="com.example.cv_pro_max.Camera_Usage.CameraConnectionFragment"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:background="@color/black"
+        tools:ignore="MissingConstraints" />
+
+    <RelativeLayout
+        android:layout_below="@id/fragmentContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/btDisconnect"
+            android:layout_width="122dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/square"
+            android:backgroundTint="@color/blue"
+            android:text="@string/disconnect"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvac"
+            android:layout_width="152dp"
+            android:layout_height="48dp"
+
+            android:layout_below="@id/btDisconnect"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:text="Control Values"
+            android:gravity="center"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="224dp" />
+
+        <Switch
+            android:id="@+id/logSwitch"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="26dp"
+            android:layout_toEndOf="@+id/btDisconnect"
+            android:text="@string/log"
+            android:textColor="@color/black"
+            android:textOff="@string/off"
+            android:textOn="@string/on"
+            android:textStyle="bold"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <Switch
+            android:id="@+id/zip"
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvac"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="22dp"
+            android:layout_marginBottom="7dp"
+            android:layout_toStartOf="@+id/btDisconnect"
+            android:text="@string/zip"
+            android:textColor="@color/black"
+            android:textOff="OFF"
+            android:textOn="On"
+            android:textStyle="bold"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

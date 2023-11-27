@@ -1,0 +1,88 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.cvpro.competition'
+    compileSdk 33
+    buildToolsVersion '33.0.0'
+
+    defaultConfig {
+        applicationId "com.cvpro.competition"
+        minSdk 29
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled = true
+            shrinkResources = true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        dataBinding = true
+        viewBinding true
+        mlModelBinding true
+    }
+}
+
+configurations {
+    cleanedAnnotations
+    implementation.exclude group: 'org.jetbrains' , module:'annotations'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1'
+    implementation 'androidx.navigation:navigation-fragment:2.5.3'
+    implementation 'androidx.navigation:navigation-ui:2.5.3'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    // CameraX
+    def camerax_version = "1.1.0-beta01"
+    //no inspection GradleDependency
+    implementation "androidx.camera:camera-core:${camerax_version}"
+    //no inspection GradleDependency
+    implementation "androidx.camera:camera-camera2:${camerax_version}"
+    //no inspection GradleDependency
+    implementation "androidx.camera:camera-lifecycle:${camerax_version}"
+    //no inspection GradleDependency
+    implementation "androidx.camera:camera-video:${camerax_version}"
+    //no inspection GradleDependency
+    implementation "androidx.camera:camera-view:${camerax_version}"
+    //no inspection GradleDependency
+    implementation "androidx.camera:camera-extensions:${camerax_version}"
+
+    //Tensorflow Library Dependencies
+    implementation 'org.tensorflow:tensorflow-lite:2.11.0'
+    implementation 'org.tensorflow:tensorflow-lite-gpu:2.11.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.room:room-compiler:2.5.1'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.4.3'
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.3'
+    // Import the GPU delegate plugin Library for GPU inference
+    implementation 'org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.3'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'com.google.guava:guava:27.0.1-android'
+
+    // Import the USB-serial
+    implementation 'com.github.felHR85:UsbSerial:6.1.0'
+
+}

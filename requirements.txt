@@ -1,0 +1,16 @@
+tqdm 
+numpy
+pygame~=2.4.0
+pandas
+pillow
+notebook
+seaborn
+paho-mqtt
+matplotlib
+scikit-learn
+opencv-python~=4.5.4.60
+
+
+
+
+

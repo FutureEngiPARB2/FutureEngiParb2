@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">V2V(SUB_PUB)</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="log">Log</string>
+    <string name="off">off</string>
+    <string name="on">/on</string>
+    <string name="zip">Zip</string>
+    <string name="OFF">OFF</string>
+    <string name="On">On</string>
+
+    <string name="model_title">Model</string>
+    <string name="object">Object</string>
+    <string name="model">Model</string>
+    <string name="frame">Frame</string>
+    <string name="crop">Crop</string>
+    <string name="crop_value">640*480</string>
+    <string name="inference_time">Inference Time</string>
+    <string name="inference_time_value">640*480</string>
+    <string name="threads">Threads</string>
+    <string name="threads_value">4</string>
+    <string name="api">API</string>
+    <string name="tflite">TFLITE</string>
+    <string-array name="model_types_all">
+        <item>All</item>
+        <item>Image Classification</item>
+        <item>Object Detection</item>
+    </string-array>
+    <string-array name="objects_list">
+        <item>Choose</item>
+    </string-array>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="tfe_od_camera_error">camera_error</string>
+
+    <string name="label_on">ON</string>
+    <string name="label_off">OFF</string>
+
+    <string name="label_camera_flip">Front Camera</string>
+    <string name="label_flash_light">Flashlight</string>
+    <string name="object_detection">Object Detection</string>
+
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="hint_width">W</string>
+    <string name="hint_height">H</string>
+    <string name="x">X</string>
+    <string name="size">Size</string>
+    <string name="accuracy">Accuracy</string>
+    <string name="todo">TODO</string>
+    <string-array name="model_types">
+        <item>Choose</item>
+        <item>All</item>
+        <item>Image Classification</item>
+        <item>Object Detection</item>
+    </string-array>
+    <string name="model_details">Model Details</string>
+    <string name="type">Type</string>
+    <string name="model_file">Model File</string>
+    <string name="label_file">Label File</string>
+    <string-array name="models">
+        <item>Quantized</item>
+        <item>Float</item>
+    </string-array>
+    <string-array name="devices">
+        <item>CPU</item>
+        <item>GPU</item>
+        <item>NNAPI</item>
+    </string-array>
+    <string name="device">Device:</string>
+    <string name="IP_PORT">tcp://192.168.1.197:1883</string>
+    <string name="title_activity_nagavation_main">Nagavation_Main</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="ip_address">IP address</string>
+    <string name="give_it_a_topic">Give it a name</string>
+    <string name="pair">Pair</string>
+    <string name="open_challenge">Open Challenge</string>
+    <string name="sample_challenge">sample challenge</string>
+</resources>

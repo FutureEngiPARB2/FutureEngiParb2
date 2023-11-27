@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera." />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="auto" />
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_logo"
+        android:label="CV PRO Competition"
+        android:roundIcon="@mipmap/app_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CV_Pro_wireless_1"
+        tools:targetApi="33">
+        <activity
+            android:name="com.cvpro.competition.Sample_Challenge"
+            android:exported="false" />
+        <activity
+            android:name="com.cvpro.competition.Selecting_Model"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cvpro.competition.Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+
+        </activity>
+
+        <activity
+            android:name="com.cvpro.competition.MainActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".DataCollection.DataCollection"
+            android:exported="true" />
+        <activity
+            android:name=".DataCollection.CameraActivity_Data"
+            android:exported="true" >
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.cvpro.competition.ImageClassification.Image_Classification"
+            android:exported="false" />
+
+        <activity
+            android:name="com.cvpro.competition.ModelManagement.AddModelActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.cvpro.competition.ModelManagement.ModelManagementActivity"
+            android:exported="false" />
+
+        <service
+            android:name="com.cvpro.competition.UsbService"
+            android:enabled="true" />
+    </application>
+
+</manifest>

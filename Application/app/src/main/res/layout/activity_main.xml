@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layout_background"
+    tools:context="com.cvpro.competition.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="299dp"
+        android:layout_height="303dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267"
+        app:srcCompat="@drawable/bot_image" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintVertical_bias="1.0">
+
+
+        <Button
+            android:id="@+id/openchallenge"
+            android:layout_width="230dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="293dp"
+            android:layout_marginBottom="292dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/square"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/colorAccent"
+            android:text="@string/sample_challenge"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/datacollection"
+            android:layout_width="230dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="293dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="169dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/square"
+            android:backgroundTint="@color/maroon"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:text="Data Collection"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/second_challenge"
+            android:layout_width="230dp"
+            android:layout_height="46dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="50dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/square"
+            android:contentDescription="@string/todo"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#CDDC39"
+            android:text="Autonomous"
+            android:textColor="@color/white"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="248dp"
+        android:layout_height="108dp"
+        android:contentDescription="@string/todo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/app_name_light" />
+
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="36dp"
+
+        android:layout_marginBottom="263dp"
+        android:background="@drawable/square"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/setting_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
