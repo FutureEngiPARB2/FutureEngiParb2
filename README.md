@@ -140,6 +140,13 @@ To work with the CV Pro competition kit, corresponding Android application is re
 
 To start, upload the `CVPRO-Competition-Firmware` into the competition kit, from the Firmware folder in your `CVPRO-Competition-Kit` repository.
 
+## How to connect the Phone and CV Pro Competition kit using connecting cable?
+
+1. Connect the female-end of Type-C-OTG cable with male-end of Type-C-USB cable to establish a link.
+2. Connect the Type-C end of Type-C-OTG cable with phone.
+3. Connect the Type-C end of Type-C-USB cable with Type-C port on the PCB board.
+4. If the connection process is correct, it will seek for permissions on your phone.
+
 # Sample Challenge
 
 - Connect between the phone and the CV Pro Competition kit, using the OTG cable. 
