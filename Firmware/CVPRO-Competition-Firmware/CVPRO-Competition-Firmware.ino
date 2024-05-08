@@ -1,6 +1,6 @@
 // CVPRO Competition. 
-// Code Developed by Meritus R & D Team - 07-11-2023
-// Copyright © 2023. Meritus R & D Team. All rights reserved.
+// Code Developed by Meritus Team - 07-11-2023
+// Copyright © 2023. Meritus Team. All rights reserved.
 
 #include <ESP32Servo.h>
 
