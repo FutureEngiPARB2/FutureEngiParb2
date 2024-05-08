@@ -1,7 +1,7 @@
 // Motor Test-Code for CVPRO Competition Kit
 // for testing Peripherals
-// Code Developed by Dinesh, Anuhya and Meritus R & D Team - 16-10-2023
-// Copyright © 2023 Dinesh, Anuhyaand Meritus R & D Team. All rights reserved.
+// Code Developed by and Meritus Team - 16-10-2023
+// Copyright © 2023 Meritus Team. All rights reserved.
 // This program is the intellectual property of Meritus AI, and may not be distributed or reproduced without explicit authorization from the copyright holder.
 
 // Define the pin numbers for the motor driver connections
